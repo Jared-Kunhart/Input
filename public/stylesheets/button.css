@@ -1,0 +1,237 @@
+.pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+  }
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(
+      to left,
+      hsl(340deg 100% 16%) 0%,
+      hsl(340deg 100% 32%) 8%,
+      hsl(340deg 100% 32%) 92%,
+      hsl(340deg 100% 16%) 100%
+    );
+  }
+  .front {
+    display: block;
+    position: relative;
+    padding: 6px 21px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: rgb(59,58,64);
+    background: rgb(233,79,67);
+    font-weight: bolder;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+
+  .edgeY {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(
+      to left,
+      rgb(23, 73, 0) 0%,
+      rgb(0, 163, 68) 8%,
+      rgb(0, 163, 41) 92%,
+      rgb(0, 82, 21) 100%
+    );
+  }
+  .frontY {
+    display: block;
+    position: relative;
+    padding: 6px 21px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: rgb(59,58,64);
+    background: rgb(26, 206, 2);
+    font-weight: bolder;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+
+  .edgeS {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(
+      to left,
+      rgb(73, 72, 1) 0%,
+      rgb(255, 251, 42) 8%,
+      rgb(232, 255, 22) 92%,
+      rgb(129, 131, 0) 100%
+    );
+  }
+  .frontS {
+    display: block;
+    position: relative;
+    padding: 6px 21px;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    color: rgb(59,58,64);
+    background: rgb(255, 251, 34);
+    font-weight: bolder;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+
+  #registerlink {
+    font-size: 1.25rem;
+    color: rgb(59,58,64);
+    font-weight: bolder;
+  }
+  .pushable:hover {
+    filter: brightness(110%);
+  }
+  .pushable:hover .front {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  .pushable:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  .pushable:hover .shadow {
+    transform: translateY(4px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  .pushable:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  .pushable:hover .frontY {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  .pushable:active .frontY {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  .pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+  #transparent-button {
+    background: none;
+	  color: inherit;
+	  border: none;
+	  padding: 0;
+	  font: inherit;
+	  cursor: pointer;
+	  outline: inherit;
+  }
+
+  .start-btn{
+    font-family: 'Press Start 2P', cursive;
+      text-align: center;
+    display: inline-block;
+    margin:5px;
+      font-weight: bold;
+      padding: 10px 0 10px 10px ;
+      background-color: lightgray;
+      text-shadow: -1px -1px black, 1px 1px white;
+      color: gray;
+      -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+      box-shadow: 0 .2em gray; 
+      cursor: pointer;
+  }
+  .end-btn{
+    font-family: 'Press Start 2P', cursive;
+      text-align: center;
+    display: inline-block;
+    margin:5px;
+      font-weight: bold;
+      padding: 10px 0 10px 10px ;
+      background-color: rgb(196, 14, 14);
+      text-shadow: -1px -1px black, 1px 1px white;
+      color: gray;
+      -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+      box-shadow: 0 .2em gray; 
+      cursor: pointer;
+  
+  }
+  .video-game-button:active, .start-btn:active {
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+  }
+
+  #commentCreate {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+      text-align: center;
+    display: inline-block;
+    margin:1px;
+      font-weight: bold;
+      padding: 4px 4px 4px 4px ;
+      background-color: lightgray;
+      text-shadow: -1px -1px black, 1px 1px white;
+      color: rgb(128, 126, 126);
+      -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+      box-shadow: 0 .2em gray; 
+      cursor: pointer;
+  }

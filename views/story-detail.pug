@@ -1,0 +1,98 @@
+extends layout.pug
+include utils.pug
+
+append head
+  link(rel="stylesheet" href="/stylesheets/storyDetail.css")
+
+block content
+  h1= title
+  .containerBoxWrapper
+    .containerBox
+      .headerBox
+        .headerBoxImg
+          img(src=`/img/users/user${story.userId%20}.png`)
+        .headerBoxTopic
+          if story.title.length < 32
+            h2=`${story.title.toUpperCase()}`
+          else
+            h2 #{story.title.toUpperCase().slice(0,32)} #{"..."}
+          p(id="storyWrittenDateDetail")=`${story.createdAt.toString().slice(0,15)}`
+          p #{story.topicType}
+      .storyContentBox
+        .storyContentTextBox
+          p=story.content
+        .storyContentImgBox
+          img(src=`/img/gameimg/game${story.gameId}.png` width="300px")
+
+      .storyContentFooter
+        .coinBox
+          img(id=`storyCoinID${story.id}ID${session}` class="storyCoinSpinImage coinSound" src='/img/coin.png' width='20px')
+          p(id='storyCoinText')=storyCoinsCount % 10000000
+          p(id='userStoryCoinText')=userStoryCoinsCount % 10000000
+        if session !== 0
+          button(id=`bmrkID${story.id}ID${session}` class='bookmarkBtn')
+            //- if userStoryCoinsCount >= 10000000
+            //-   span(id=`bmrkspanID${story.id}ID${session}`).start-btn UnBook
+            //- else 
+            //-   span(id=`bmrkspanID${story.id}ID${session}`).start-btn Bookmark
+            //- end
+            if userStoryCoinsCount >= 10000000
+              img(src='/img/bookmarks_black.png' id=`bmrkimgID${story.id}ID${session}` width '40px' height='40px')
+            else
+              img(src='/img/bookmarks_white.png' id=`bmrkimgID${story.id}ID${session}` width '40px' height='40px')
+            end
+        end
+          button(id=`strcommentID${story.id}ID${session}` class='strcomment')
+              span.start-btn Comment
+      if session === story.userId || session === 2
+        .storyContentButtonBox     
+          button#transparent-button
+            span.start-btn
+              a(href=`/stories/edit/${story.id}`) Edit
+          button#transparent-button
+            span.end-btn
+              a(id="cancelbutton" href=`/stories/delete/${story.id}`) Delete
+      end
+
+    script(src="/javascripts/coinSound.js" type="module")
+    script(src="/javascripts/coin-story.js" type="module")
+    script(src="/javascripts/comment.js" type="module")
+      //- .commentBoxWrapper
+      //-   .commentList
+      //-     .commentFormBox
+      //-       //form(action='/comments/new' method='post')
+      //-       form(id='create-form')
+      //-         input(type='hidden' name='_csrf' value=csrfToken)
+      //-         input(id='storyCId' type='hidden' name='storyId' value=story.id)
+      //-         +field('', 'comment', '', 'textarea')
+      //-         div(class='py-4')
+      //-         button(id='comment-button' type='submit' class='comment-create-btn').pushable
+      //-           span.shadow
+      //-           span.edge
+      //-           span.front Comment
+      //-   .commentList1(id='comment-main-wrapper')
+      //-     each comment in comments
+      //-       .commentBox(id=`comment-box-${comment.id}`)
+      //-         .commentBoxContent
+      //-           .profile
+      //-             img(src=`/img/users/user${comment.User.id}.png` width='50px')
+      //-             p=`${comment.User.firstName} ${comment.User.lastName}`
+      //-           .commentBoxBubble
+      //-             p(id=`comment-content-${comment.id}`)=comment.comment
+      //-             //p(id=`comment-content-${comment.id}`)='asdf'
+      //-         .editDelButtonBox(class='refresh-button')
+      //-           button.pushable(class='comment-edit-btn' id=`editID${comment.id}ID${comment.User.id}ID${session.id}`) Edit
+      //-           form(class='hidden' id=`edit-form-${comment.id}`)
+      //-             input(type='hidden' name='_csrf' value=csrfToken)
+      //-             label(for="content") Comment:
+      //-             input(type="text" name='content' value=comment.comment id=`comment-field-${comment.id}`)
+      //-             button(class='edit-submit-btn' id=`edit-btn-${comment.id}`) Submit Edit
+      //-           button.pushable(class='comment-delete-btn' id=`deleteID${comment.id}ID${comment.User.id}ID${session.id}`) Delete
+      //-         .commentExtra(class='refresh-button')
+      //-           .cELeft
+      //-             .cECoin
+      //-               .cECoinImg(id=`coinID${comment.id}ID${comment.User.id}ID${session.id}` class='coin-btn')
+      //-                 img(id=`coinID${comment.id}ID${comment.User.id}ID${session.id}` src='/img/coin.png' width='20px' class='coinimg animated bounce')
+      //-               .cECoinCnt(id=`cntID${comment.id}ID${comment.User.id}ID${session.id}`)= `${sum[`${comment.id}`]}`
+      //-           .cEMid
+      //-           .cERight

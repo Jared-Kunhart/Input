@@ -1,0 +1,157 @@
+doctype html
+html
+  head
+      block head
+        title="Input"
+        link(rel='stylesheet' href='/stylesheets/reset.css')
+        link(rel='stylesheet' href='/stylesheets/index.css')
+        link(rel='stylesheet' href='/stylesheets/styles.css')
+        link(rel='stylesheet' href='/stylesheets/button.css')
+        link(rel='stylesheet' href='/stylesheets/tooltip.css')
+        link(rel='stylesheet' href='/stylesheets/taehoon.css')
+        link(rel='stylesheet' href='/stylesheets/test.css')
+        link(rel='stylesheet' href='/stylesheets/typewriter.css')
+        link(rel='stylesheet' href='/font-awesome-4.7.0/css/font-awesome.min.css')
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Press+Start+2P&display=swap" rel="stylesheet")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+
+        meta(property="og:title" content="Input")
+        meta(property="og:image" content="/assets/intro.gif")
+        meta(property="og:description" content="Input is a clone of Medium where you can share your video game walkthroughs and reviews!")
+        meta(property="og:url" content="https://inputapptest.herokuapp.com/")
+
+        script(src='/javascripts/index.js')
+        script(src="/javascripts/follows.js" type="module")
+        script(src="/javascripts/bookmarks.js" type="module")
+        script(src="/javascripts/themeselect.js" type="module")
+        script(src="/javascripts/coinSound.js" type="module")
+        script(src="/javascripts/devProfile.js" type="module")
+        script(src="/javascripts/stories-feeds-switch.js" type="module")
+        
+
+        //- script(src="/javascripts/create_comment.js" type="module")
+        //- script(src="/javascripts/edit_comment.js" type="module")
+        //- script(src="/javascripts/delete_comment.js" type="module")
+        //- script(src="/javascripts/follows.js" type="module")
+        //- script(src="/javascripts/coin-comment.js" type="module")
+
+  body
+    #layout
+        #nav
+            #menu-box
+                #icon-box
+                    img(id="nav-bar-icon" src='/img/icon.png')
+                #menu-link-box
+                    a(href="/stories" id="menu-link"): img(id="menu-icon1" src='/img/home.png' alt="Home" title="Home")
+                    a(href="/stories/recent" id="menu-link"): img(id="menu-icon2" src='/img/bell.png' alt="Recent Stories" title="Recent Stories")
+                    a(href="/bookmarks" id="menu-link"): img(id="menu-icon3" src='/img/bookmark.png' alt="Boookmark" title="Bookmark")
+                    a(href="/stories/user" id="menu-link"): img(id="menu-icon4" src='/img/stories.png' alt="My Stories" title="My Stories")
+                    a(href="/stories/new"  id="menu-link"): img(id="menu-icon4" src='/img/write.png' alt="Write a new Story" title="Write a new Story")
+                #login-status-box
+                    if locals.authenticated 
+                      #loginIconBoxin
+                        a(id="loginLink" href="/users/logout")
+                          img(id="loginEffect" src="/img/logicon3.png" width="60px")
+                          img(src="/img/logicon.png" width="60px")
+                    else 
+                      #loginIconBoxout
+                        a(id="loginLink" href="/users/login")
+                          img(id="floatingCart" src="/img/logicon2.png" width="45px")
+                          img(src="/img/logicon1.png" width="60px")
+        #main
+          #topBoxWrpper
+          #content-box
+            block content
+        #mainside
+            #side-content-box
+              if locals.authenticated
+                  p#welcomMessage Welcome #{user.userName} !
+                  #logUserProfileBoxWrapper
+                    #logUserProfileBox
+                      #logUserProfileBoxHeadMessage
+                        p P
+                        p 1
+                      #logUserProfileBoxHeader 
+                        #logUserProfileBoxHeaderImgBox
+                          img(src=`/img/users/user${user.id%20}.png` width="50px")
+                        #logUserProfileBoxHeaderNameBox 
+                          p(id="")=user.userName
+                      #logUserProfileBoxContent
+                          p=`${user.firstName} ${user.lastName}`
+                          p=user.email
+                          p=user.createdAt.toString().slice(4,15)
+                      #logUserProfileBoxFooter
+              else
+                  a(id="loginLink" href='/users/login')
+                   p#welcomMessage Not Logged In ?
+              #topicBox
+                #topicHeader
+                  p#topicHeaderText Recommended Topics
+                #topicButtonBox
+                  #topicButton
+                    a(id="topiclink" href='/stories/types/Review') Review 
+                  #topicButton
+                    a(id="topiclink" href='/stories/types/Story') Story
+                  #topicButton
+                    a(id="topiclink" href='/stories/types/Walkthrough') Walk-through
+              #userProfileBox
+                #userProfileBoxWrapper
+              #devProfileBoxWrapper
+                #leftbuttonBox
+                  i(class="fa fa-arrow-left" aria-hidden="true")
+
+                #devProfileBox
+                  #devProfileBoxHeadMessage
+                    p#devProfileHeadText Developer
+                  #devProfileBoxHeadImgBox.devProfileImgTwo
+                  #devProfileBoxContentWrapper 
+                    #devProfileBoxContentMain
+                      #devNameBox
+                        p Jared Kunhart
+                      #devLinkBox
+                        a(href="https://github.com/Jared-Kunhart")
+                          i(class="fa fa-github" aria-hidden="true")
+                  #devProfileBoxFooterWrapper 
+                    #devProfileBoxFooter  
+
+                #devProfileBox.hiddenProfile
+                  #devProfileBoxHeadMessage
+                    p#devProfileHeadText Developer
+                  #devProfileBoxHeadImgBox.devProfileImgThree 
+                  #devProfileBoxContentWrapper 
+                    #devProfileBoxContentMain
+                      #devNameBox
+                        p Taehoon Kim
+                      #devLinkBox
+
+                        a(href="https://github.com/thstar79")
+                          i(class="fa fa-github" aria-hidden="true")
+                  #devProfileBoxFooterWrapper 
+                    #devProfileBoxFooter  
+
+                #devProfileBox.hiddenProfile
+                  #devProfileBoxHeadMessage
+                    p#devProfileHeadText Developer
+                  #devProfileBoxHeadImgBox.devProfileImgFour 
+                  #devProfileBoxContentWrapper 
+                    #devProfileBoxContentMain
+                      #devNameBox
+                        p Steve Choi
+                      #devLinkBox
+                        a(href="https://github.com/Fiasco071")
+                          i(class="fa fa-github" aria-hidden="true")
+                  #devProfileBoxFooterWrapper 
+                    #devProfileBoxFooter    
+                #rightbuttonBox
+                  i(class="fa fa-arrow-right" aria-hidden="true")          
+        #extraside
+          //- #comment-wrapper.hiddenC
+          //-   #comment-top-wrapper
+          //-     #comment-top-top
+          //-     #comment-top-main
+          //-   #comment-main-wrapper
+
+                script(src="/javascripts/coinSound.js" type="module")
+                script(src='/javascripts/index.js' type="module")

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+.loginbuttonbox {
+    position: relative;
+    left:130px;
+}
+
+#email, #password  {
+    background-color : rgba(138, 172, 15, 0.815);
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top {
+    border: solid black 7px;
+    position:relative;
+    left: -5px;
+    width:650px;
+    height:120px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arcadeTopText {
+    text-shadow: 3px 3px rgb(77, 77, 77), 5px 5px rgb(0, 0, 0);
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+#toptwo{
+    position:relative;
+    left: -5px;
+    width:650px;
+    height:90px;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 97.5% 100%, 2.5% 100%);
+}
+#mainContainer {
+    position:relative;
+    left: -5px;
+    width:619px;
+    height:350px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screenContainer {
+    border-top: solid black 10px;
+    border-bottom: solid black 10px;
+    border-left: solid black 20px;
+    border-right: solid black 20px;
+    width: 85%;
+    height: 300px;
+    background-color: rgba(138, 172, 15, 0.815);
+    overflow-y:auto;
+    padding: 0 10px 0 10px;
+}
+#controller {
+    border-top: solid black 5px;
+    border-right: solid black 5px;
+    position:relative;
+    left: -5px;
+    width:730px;
+    height:100px;
+    background-color: rgb(49, 49, 49);
+    clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bottom {
+    position:relative;
+    left: -5px;
+    width:725px;
+    height:200px;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
+}
+#loginTitle {
+    color: rgb(59, 59, 59);
+}
+
+#loginformBox {
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#loginField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mario{
+    position: absolute;
+    width: 71px;
+    height: 72px;
+    background: url('https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/mariowalking/result.png') left center;    
+    top:230px;
+    left:0px;
+    
+    -webkit-animation: play 0.8s steps(4) infinite,
+                run 2s both infinite linear;
+    
+            animation: play 0.8s steps(4) infinite,
+                run 2s both infinite linear;
+}
+@-webkit-keyframes play{
+    100%{background-position: -284px;}
+}
+@keyframes play{
+    100%{background-position: -284px;}
+}
+@-webkit-keyframes run{
+    from{left: 50px;}
+    to{left: 70%;}
+}
+@keyframes run{
+    from{left: 50px;}
+    to{left:70%;}
+}
+
+.coinBox {
+    margin-left: 15px;
+}
+
+#storyCoinSpinImage {
+	/* transform: rotateY(45deg);
+	animation: rotateAnimation 0.5s linear infinite; */
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+
+#topBoxWrpper {
+    width: 700px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.topProfileDetailBox {
+    margin-left: 10px
+}
+.topProfieImageBox {
+    margin: 5px 5px 5px 0px
+}
+
+#homelink  {
+    font-size: 30px;
+    color:red
+}
+
+
+#yesButton {
+    position: absolute;
+    top:380px;
+    z-index: 1;
+}
+
+#noButton {
+    z-index: 1;
+    position: relative;
+    left: 400px;
+    top: -5px;
+}
+#topicBox {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgb(223, 223, 223);
+    padding-bottom: 1px;
+}
+#topicHeader {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0 ;
+    background-color:  #e4000f;
+    height: 35px;
+}
+#topicHeaderText {
+    font-family: 'Poor Story', cursive;
+    color: white;
+    font-weight: bolder;
+    margin: 0 0 0 0;
+}
+
+#superButton {
+    position: relative;
+    left:-140px;
+    top: -5px;
+}
+
+#topicButtonBox {
+ display:flex;
+ justify-content: space-evenly;
+ align-items: center;
+ margin: 15px 0 20px 0;
+ height: 40px;
+}
+
+#topicButton {
+    border: solid #e4000f 0.5px;
+    border-radius: 30px;
+    padding: 3px 5px 3px 5px;
+    display: inline-block;
+    color: black;
+}
+
+#topiclink {
+    margin-left: 3px;
+    font-family:  'Press Start 2P', cursive;
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(155, 155, 155);
+}
+
+#gameTitleText {
+    margin-left: 3px;
+    font-family:  'Press Start 2P', cursive;
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(155, 155, 155);
+}
+
+#comment-main-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 0 25px;
+}
+.comment-box {
+    border-radius: 10px;
+    border-left: #e4000f solid 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.comment-box-sub1 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+}
+.cMB1p {
+    background-color: white;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+}
+
+.cMB1p > p {
+    margin-top: 2px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Press start 2P', cursive;
+    text-shadow: 2px 2px grey;
+}
+
+.cMB1c {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Poor Story', cursive;
+}
+
+.comment-box-sub2 {
+    display: flex;
+    flex-direction: column;
+    height:90px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comment-box-sub2 > button > i{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    left: 90px;
+}
+
+.comment-box-sub3 {
+    position: relative;
+    left: 20px;
+    font-family: 'Press start 2P', cursive;
+    color: #e4000f;
+}
+
+.comment-box-sub3 > div> div {
+    display: flex;
+}
+
+.comment-box-sub3 > div> div > div {
+    margin-right:5px;
+}
+
+#comment-top-main {
+    height: 100px;
+    margin: 0 0 0 0;
+    display: flex; 
+}
+
+#userProfileContentBox > label {
+    visibility: hidden;
+}
+
+#comment {
+    border:none;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 216);
+
+}
+

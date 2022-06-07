@@ -1,0 +1,55 @@
+extends layout.pug 
+include utils.pug 
+
+block content
+    #container
+        #top
+            p#arcadeTopText='INPUT'
+        #toptwo
+        #mainContainer 
+            #screenContainer
+                .loginBox
+                    .typewriter
+                      h1(id="loginTitle")=title
+                    +validationErrorSummary(errors)
+                    form(action='' method='post')
+                        input(type='hidden' name='_csrf' value=csrfToken)
+                        #loginformBox
+                            #loginField
+                                #loginFieldLabel.typewriter
+                                    p(id="logtext" for='email') Email Address
+                                #loginFieldInput    
+                                    input(type='text' id='loginEmailInput' name='email' value=email)
+                            #loginField
+                                #loginFieldLabel
+                                    p(id="logtext" for='password') Password
+                                #loginFieldInput
+                                    input(type='password' id='loginPasswordInput' name='password' )
+                            
+                        .mario            
+                        #yesButton
+                            button.pushable
+                                span.shadow
+                                span.edgeY
+                                span.frontY A
+                        
+                                    
+                            
+        #controller
+            #noButton
+              a(href="/users/register")   
+                button.pushable#registerLink
+                    span.shadow
+                    span.edge
+                    span.front B
+                        
+            div
+                #superButton
+                     a(href='/users/login/demo')
+                        button.pushable
+                            span.shadow
+                            span.edgeS
+                            span.frontS Demo User
+        #bottom
+
+        script(src="/javascripts/test.js" type="module")

@@ -1,0 +1,267 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.containerBoxWrapper {
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    border: 0.5px solid grey;
+    width: 800px;
+}
+
+.containerBox {
+    width: 100%;
+    margin-top:0;
+}
+
+.headerBox {
+    display: flex;
+    background-color: #e4000f;
+    border-radius: 10px 10px 0 0;
+}
+
+.headerBoxTopic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:0 20px 0 20px;
+    font-family:'Press Start 2P', cursive;
+}
+#storyWrittenDateDetail {
+    font-size: 10px;
+    color: rgb(211, 211, 211);
+}
+
+
+.headerBoxTopic h2{
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px rgb(0, 0, 0), -1px -1px rgb(211, 211, 211);
+}
+
+.headerBoxTopic p{
+    font-weight: bolder;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px rgb(0, 0, 0), -1px -1px rgb(211, 211, 211);
+}
+
+.headerBoxImg {
+    width: 100px;
+    background-color: white;
+    border-radius: 10px 0 0 0px;
+    border-left:solid 2px white;
+    border-top:solid 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerBoxImg > img {
+    max-width:100%;
+    max-height:100%;
+}
+
+
+
+.headerBox a {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.storyContentBox {
+    display: flex;
+    padding-top:0;
+    justify-content: space-between;
+}
+.coinBox {
+    display:flex;
+    align-items: center;
+}
+#content-box > div > div > div.storyContentBox > div > p {
+    padding: 10px 10px 10px 10px;
+}
+
+.storyContentTextBox {
+    font-family: 'Poor Story', cursive;
+    margin: 30px 0 0 30px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.storyContentImgBox {
+    float: right;
+}
+#transparent-button\ strcomment5 {
+
+}
+.storyContentFooter {
+    height: 50px;
+    background-color: rgb(238, 49, 49);
+    display: flex;
+    width:100%;
+    align-items: center;
+    margin-top:25px;
+    justify-content: space-between;
+}
+
+#cancelbutton{
+    color:white;
+}
+
+.strcomment {
+    margin:  0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: rgb(238, 49, 49);
+    background: none;
+	  color: black;
+	  border: none;
+	  padding: 0;
+	  font: inherit;
+	  cursor: pointer;
+	  outline: inherit;
+    
+}
+
+.commentBoxWrapper {
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.commentList {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.commentFormBox {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#create-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    width: 500px;
+    height: 75px;
+    resize: none;
+    border: 0.1rem solid;
+    margin-right: 1rem;
+}
+
+.commentBox {
+    background-color: rgb(241, 240, 240);
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.commentBoxContent {
+    width: 70%;
+    padding: auto 0;
+}
+
+.commentBoxContent .profile {
+    margin-left: 0;
+}
+
+.commentBoxContent .profile p {
+    margin: 0 0 0 0.5em;
+    align-items: center;
+}
+
+.commentBoxBubble {
+    margin: 0 auto 0 1rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.commentBoxBubble [id*="comment-content"] {
+    margin: 0;
+}
+
+#display-coins {
+    width: 1rem;
+    align-self: flex-end;
+    order: -2;
+    z-index: 1;
+    position: relative;
+    left: 75px;
+    bottom: 10px;
+}
+
+[id*="editId"] span {
+    font-size: 1em;
+    color: black;
+}
+
+[id*="deleteId"] span {
+    font-size: 1em;
+    color: black;
+}
+
+.cECoinImg.coin-btn {
+    width: 1.5rem;
+}
+
+[id*="coin"] {
+    /* border: 1px solid black; */
+    width: 1rem;
+    align-content: center;
+}
+
+#comment-wrapper {
+    border-left:solid grey 0.5px;
+    border-radius: 10px 0 0 10px;
+}
+
+#comment-top-wrapper {
+    height: 100px;
+    border-top: 35px solid #e4000f;
+    border-radius: 10px 0 0 0 ;
+}
+
+#comment-box {
+    border-top: solid grey 0.5px;
+}
+
+.comment-box-sub2 > form {
+    position: relative;
+    left:-240px;
+    top: 50px;
+}
+
+
+.comment-box-sub2 > form > input{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 1px grey;
+}
+
+
+.comment-box-sub2 > form > button{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 1px grey;
+    position: relative;
+    left:200px;
+    top: -30px;
+}
