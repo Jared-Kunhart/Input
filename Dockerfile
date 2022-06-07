@@ -1,14 +1,20 @@
-FROM node:16.13.0 AS build-stage
-
-WORKDIR /react-app
-COPY react-app/. .
+FROM node:16.14.2 AS build-stage
+RUN mkdir /src
+RUN npm install nodemon -g
+WORKDIR /src
+ADD app/package.json /src/package.json
+RUN npm install
+EXPOSE 3000
+CMD npm start
+# WORKDIR /react-app
+# COPY react-app/. .
 
 # You have to set this because it should be set during build time.
-ENV REACT_APP_BASE_URL=https://lnput.herokuapp.com/
+# ENV REACT_APP_BASE_URL=https://lnput.herokuapp.com/
 
 # Build our React App
-RUN npm install
-RUN npm run build
+# RUN npm install
+# RUN npm run build
 
 # FROM python:THE.EXACT.PYTHON.VERSION.IN.YOUR.PIPFILE
 
