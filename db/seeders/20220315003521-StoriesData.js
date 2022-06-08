@@ -6,12 +6,22 @@ module.exports = {
             "Stories",
             [
                 {
-                    title: "Pokemon Emerald",
+                    title: "THIS IS MY STORY",
                     content:
-                        "Steve played pokemon emerald on his gameboy advance",
+                        "I came to this site, and then i was impressed. THE END.",
                     topicType: "Story",
-                    userId: 4,
-                    gameId: 26,
+                    userId: 2,
+                    gameId: 7,
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    title: "A FUN GAME... IF YOU HAVE FRIENDS",
+                    content:
+                        "The actual gameplay of Rocket League is pretty fantastic, albeit buggy at times. It's easy to learn and difficult to master. So difficult that it will take you many hundreds of hours to become pro level at it, otherwise you can expect to compete in the lower ranks. Essentially it's soccer played with rocket powered cars. While new players may just drive and jump around the field, experienced players can boost into the air to add a new vertical dimension of strategy.",
+                    topicType: "Review",
+                    userId: 13,
+                    gameId: 13,
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -106,22 +116,12 @@ module.exports = {
                     updatedAt: new Date(),
                 },
                 {
-                    title: "A FUN GAME... IF YOU HAVE FRIENDS",
+                    title: "Pokemon Emerald",
                     content:
-                        "The actual gameplay of Rocket League is pretty fantastic, albeit buggy at times. It's easy to learn and difficult to master. So difficult that it will take you many hundreds of hours to become pro level at it, otherwise you can expect to compete in the lower ranks. Essentially it's soccer played with rocket powered cars. While new players may just drive and jump around the field, experienced players can boost into the air to add a new vertical dimension of strategy.",
-                    topicType: "Review",
-                    userId: 13,
-                    gameId: 13,
-                    createdAt: new Date(),
-                    updatedAt: new Date(),
-                },
-                {
-                    title: "THIS IS MY STORY",
-                    content:
-                        "I came to this site, and then i was impressed. THE END.",
+                        "Steve played pokemon emerald on his gameboy advance",
                     topicType: "Story",
-                    userId: 2,
-                    gameId: 7,
+                    userId: 4,
+                    gameId: 27,
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
