@@ -206,11 +206,12 @@ module.exports = {
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
+                // 21
                 {
-                    firstName: "Roger",
-                    lastName: "Camps",
-                    userName: "Catalan",
-                    email: "ccamps@catalan.com",
+                    firstName: "Alec",
+                    lastName: "Keeler",
+                    userName: "MOD4MASTER",
+                    email: "alec@keeler.com",
                     hashedPassword:
                         "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
                     createdAt: new Date(),
