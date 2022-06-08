@@ -12,7 +12,7 @@ module.exports = {
                     userName: "DemoUser",
                     email: "demo@demo.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -22,7 +22,7 @@ module.exports = {
                     userName: "SourdoughBrad",
                     email: "dad@jokes.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -32,7 +32,7 @@ module.exports = {
                     userName: "TaehoonK",
                     email: "taehoon@gmail.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -42,7 +42,7 @@ module.exports = {
                     userName: "ChoiCes",
                     email: "steve@choi.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -52,7 +52,7 @@ module.exports = {
                     userName: "Purity",
                     email: "purity@purity.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -62,7 +62,7 @@ module.exports = {
                     userName: "Warwatch",
                     email: "cleora1997@ezmail.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -72,7 +72,7 @@ module.exports = {
                     userName: "Dreadphobia",
                     email: "z89pa@roidirt.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -82,7 +82,7 @@ module.exports = {
                     userName: "IHasEars",
                     email: "MichaelJGarcia@armyspy.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -92,7 +92,7 @@ module.exports = {
                     userName: "Ultralord",
                     email: "papoto9356@shopxda.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -102,7 +102,7 @@ module.exports = {
                     userName: "FernandoasaurusRex",
                     email: "fvega@ezmail.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -112,7 +112,7 @@ module.exports = {
                     userName: "Hellstone",
                     email: "hellstone@hell.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -122,7 +122,7 @@ module.exports = {
                     userName: "Dragonview",
                     email: "dragon22@mail.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -132,7 +132,7 @@ module.exports = {
                     userName: "Volleyballace",
                     email: "vball44@aoi.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -142,7 +142,7 @@ module.exports = {
                     userName: "Gamephase",
                     email: "fvega@deezmail.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -152,7 +152,7 @@ module.exports = {
                     userName: "Abyssmist",
                     email: "smist@io.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -162,7 +162,7 @@ module.exports = {
                     userName: "Biofire",
                     email: "biofire@gmail.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -172,7 +172,7 @@ module.exports = {
                     userName: "Mortalrealm",
                     email: "mortal@jp.net",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -182,7 +182,7 @@ module.exports = {
                     userName: "Embercraze",
                     email: "embercraze@games.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -192,7 +192,7 @@ module.exports = {
                     userName: "Bioscape",
                     email: "taraR@ms.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -202,7 +202,7 @@ module.exports = {
                     userName: "Fusioncell",
                     email: "Reyna@valorant.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },
@@ -213,7 +213,7 @@ module.exports = {
                     userName: "MOD4MASTER",
                     email: "alec@keeler.com",
                     hashedPassword:
-                        "$2a$10$TCsMTRaBL7jRbUAT/Uyg5uUr3lZfl7afFTc0q.gzmTLq44BOXvcZu",
+                        "$2b$10$tBC.rt5ff1xynG3Ia.z5d.XdTmPBjNmzgolEvubedyT44kjOCTbpG",
                     createdAt: new Date(),
                     updatedAt: new Date(),
                 },

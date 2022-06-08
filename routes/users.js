@@ -135,7 +135,9 @@ router.post(
         const validationErrors = validationResult(req);
 
         if (validationErrors.isEmpty()) {
+            console.log(password, "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<password")
             const hashedPassword = await bcrypt.hash(password, 10);
+            console.log(hashedPassword, "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<hashedpassword")
             user.hashedPassword = hashedPassword;
             await user.save();
             loginUser(req, res, user);
