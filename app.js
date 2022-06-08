@@ -32,7 +32,7 @@ const store = new SequelizeStore({ db: sequelize });
 
 app.use(
     session({
-        secret: "0scvg263a288",
+        secret: superSecret,
         store,
         saveUninitialized: false,
         resave: false,
