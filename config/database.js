@@ -10,10 +10,15 @@ module.exports = {
       host,
       dialect: 'postgres',
     },
+    dialectOptions: {
+      ssl: {      /* <----- Add SSL option */
+        require: true,
+        rejectUnauthorized: false
+      }
+    },
     production: {
         use_env_variable: 'DATABASE_URL',
         dialect: 'postgres',
         seederStorage: 'sequelize',
       }
 };
-
