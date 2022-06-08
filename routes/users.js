@@ -180,18 +180,17 @@ router.post(
     asyncHandler(async(req, res) => {
         const { email, password } = req.body;
         let errors = [];
-        
+
         const validatorErrors = validationResult(req);
         if (validatorErrors.isEmpty()) {
             const user = await db.User.findOne({ where: { email } });
-            console.log(user)
             if (user) {
                 const passwordMatch = await bcrypt.compare(
                     password,
                     user.hashedPassword.toString()
                 );
                 if (passwordMatch) {
-                    loginUser(req, res, user);
+                    return loginUser(req, res, user);
                 }
                 else{
                     errors.push(
@@ -204,15 +203,15 @@ router.post(
                     "No User with this email registered"
                 );
             }
-        } else {
-            errors = validatorErrors.array().map((error) => error.msg);
+        }
+            valerrors = validatorErrors.array().map((error) => error.msg);
+            errors = [...errors, ...valerrors]
             res.render("user-login", {
                 title: "Login",
                 email,
                 errors,
                 csrfToken: req.csrfToken(),
             });
-        }
     })
 );
 
