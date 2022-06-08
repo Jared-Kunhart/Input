@@ -29,7 +29,7 @@ html
         script(src="/javascripts/coinSound.js" type="module")
         script(src="/javascripts/devProfile.js" type="module")
         script(src="/javascripts/stories-feeds-switch.js" type="module")
-        
+
 
         //- script(src="/javascripts/create_comment.js" type="module")
         //- script(src="/javascripts/edit_comment.js" type="module")
@@ -50,12 +50,12 @@ html
                     a(href="/stories/user" id="menu-link"): img(id="menu-icon4" src='/img/stories.png' alt="My Stories" title="My Stories")
                     a(href="/stories/new"  id="menu-link"): img(id="menu-icon4" src='/img/write.png' alt="Write a new Story" title="Write a new Story")
                 #login-status-box
-                    if locals.authenticated 
+                    if locals.authenticated
                       #loginIconBoxin
                         a(id="loginLink" href="/users/logout")
                           img(id="loginEffect" src="/img/logicon3.png" width="60px")
                           img(src="/img/logicon.png" width="60px")
-                    else 
+                    else
                       #loginIconBoxout
                         a(id="loginLink" href="/users/login")
                           img(id="floatingCart" src="/img/logicon2.png" width="45px")
@@ -73,10 +73,10 @@ html
                       #logUserProfileBoxHeadMessage
                         p P
                         p 1
-                      #logUserProfileBoxHeader 
+                      #logUserProfileBoxHeader
                         #logUserProfileBoxHeaderImgBox
                           img(src=`/img/users/user${user.id%20}.png` width="50px")
-                        #logUserProfileBoxHeaderNameBox 
+                        #logUserProfileBoxHeaderNameBox
                           p(id="")=user.userName
                       #logUserProfileBoxContent
                           p=`${user.firstName} ${user.lastName}`
@@ -91,7 +91,7 @@ html
                   p#topicHeaderText Recommended Topics
                 #topicButtonBox
                   #topicButton
-                    a(id="topiclink" href='/stories/types/Review') Review 
+                    a(id="topiclink" href='/stories/types/Review') Review
                   #topicButton
                     a(id="topiclink" href='/stories/types/Story') Story
                   #topicButton
@@ -106,21 +106,21 @@ html
                   #devProfileBoxHeadMessage
                     p#devProfileHeadText Developer
                   #devProfileBoxHeadImgBox.devProfileImgTwo
-                  #devProfileBoxContentWrapper 
+                  #devProfileBoxContentWrapper
                     #devProfileBoxContentMain
                       #devNameBox
                         p Jared Kunhart
                       #devLinkBox
                         a(href="https://github.com/Jared-Kunhart")
                           i(class="fa fa-github" aria-hidden="true")
-                  #devProfileBoxFooterWrapper 
-                    #devProfileBoxFooter  
+                  #devProfileBoxFooterWrapper
+                    #devProfileBoxFooter
 
                 #devProfileBox.hiddenProfile
                   #devProfileBoxHeadMessage
                     p#devProfileHeadText Developer
-                  #devProfileBoxHeadImgBox.devProfileImgThree 
-                  #devProfileBoxContentWrapper 
+                  #devProfileBoxHeadImgBox.devProfileImgThree
+                  #devProfileBoxContentWrapper
                     #devProfileBoxContentMain
                       #devNameBox
                         p Taehoon Kim
@@ -128,24 +128,24 @@ html
 
                         a(href="https://github.com/thstar79")
                           i(class="fa fa-github" aria-hidden="true")
-                  #devProfileBoxFooterWrapper 
-                    #devProfileBoxFooter  
+                  #devProfileBoxFooterWrapper
+                    #devProfileBoxFooter
 
-                #devProfileBox.hiddenProfile
+                #devProfileBox
                   #devProfileBoxHeadMessage
                     p#devProfileHeadText Developer
-                  #devProfileBoxHeadImgBox.devProfileImgFour 
-                  #devProfileBoxContentWrapper 
+                  #devProfileBoxHeadImgBox.devProfileImgFour
+                  #devProfileBoxContentWrapper
                     #devProfileBoxContentMain
                       #devNameBox
                         p Steve Choi
                       #devLinkBox
                         a(href="https://github.com/Fiasco071")
                           i(class="fa fa-github" aria-hidden="true")
-                  #devProfileBoxFooterWrapper 
-                    #devProfileBoxFooter    
+                  #devProfileBoxFooterWrapper
+                    #devProfileBoxFooter
                 #rightbuttonBox
-                  i(class="fa fa-arrow-right" aria-hidden="true")          
+                  i(class="fa fa-arrow-right" aria-hidden="true")
         #extraside
           //- #comment-wrapper.hiddenC
           //-   #comment-top-wrapper
