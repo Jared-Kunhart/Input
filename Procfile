@@ -1,1 +1,1 @@
-web: lnput
+web: github.com/Jared-Kunhart/Input
