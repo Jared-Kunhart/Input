@@ -4,7 +4,6 @@
     "private": true,
     "scripts": {
         "render-postbuild": "npm run build",
-        "install": "npm install",
         "sequelize": "npx dotenv sequelize",
         "sequelize-cli": "npx dotenv sequelize-cli",
         "start": "per-env",
